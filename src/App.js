@@ -5,7 +5,6 @@ import Footer from "./myComponents/Footer";
 import AddToDo from "./myComponents/AddToDo"
 import React,{useState} from 'react';
 import './App.css';
-import { json } from "body-parser";
 
 function App() {
   let initTodo;
@@ -45,9 +44,6 @@ const onDelete=(todo)=>{
     <ToDos todos={todos} onDelete={onDelete}/>
     <Footer/>
    </>
-    
-    
-  
   );
 }
 
